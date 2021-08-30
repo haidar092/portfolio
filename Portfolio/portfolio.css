@@ -106,7 +106,7 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    color:var(--yellow);
 }
 
 header .user .post{
@@ -125,17 +125,28 @@ header .navbar ul{
 
 
 header .navbar ul li a{
-    display: block;
     padding:1rem;
     margin:1.5rem 0;
     background:#333;
     color:#fff;
     font-size: 2rem;
     border-radius: 5rem;
+    display: block;
+    background: linear-gradient(to right, var(--yellow) 50%, #333 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1.5s ease-in;
+}
+header .navbar ul li a .fas{
+    font-size: 2.5rem;
+    color: lightcyan;
+    margin-right: 1.1rem;
 }
 
 header .navbar ul li a:hover{
-    background:var(--yellow);
+
+    background-position: left bottom;
+    
 }
 
 #menu{
@@ -157,7 +168,7 @@ header .navbar ul li a:hover{
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin: auto;
+    
    
 }
 .home .user img{
@@ -173,7 +184,7 @@ header .navbar ul li a:hover{
 }
 
 .home .content{
-    margin-bottom: auto;
+    margin-bottom: 60rem;
     width: 100%;
     flex:1 1 45rem;
   
@@ -310,7 +321,7 @@ header .navbar ul li a:hover{
 
 
 .education .box-container .box{
-    width:55rem;
+    width:40rem;
     margin:4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
