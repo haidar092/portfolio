@@ -161,6 +161,7 @@ header .navbar ul li a:hover{
     display: none;
 }
 .home{
+    margin-bottom: 5rem;
     background-image: url(images/images.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -184,7 +185,7 @@ header .navbar ul li a:hover{
 }
 
 .home .content{
-    margin-bottom: 60rem;
+   margin: auto;
     width: 100%;
     flex:1 1 45rem;
   
@@ -208,10 +209,10 @@ header .navbar ul li a:hover{
 
 
 
-.home .share{
+ .share{
     
     position: absolute;
-    left:55%; bottom:5rem;
+    left:55%; bottom:1rem;
     transform: translateX(-50%);
     display: flex;
     padding:1rem;
@@ -221,7 +222,7 @@ header .navbar ul li a:hover{
     transition: .2s linear;
 }
 
-.home .share a{
+ .share a{
     background: rgba(255,255,255,.2);
     box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
     padding:1rem 2rem;
@@ -231,12 +232,14 @@ header .navbar ul li a:hover{
     border-radius: 1rem;
 }
 
-.home .share a:hover{
+ .share a:hover{
     background:rgba(255,255,255,.5);
     color:#555;
 }
 
-
+.about{
+    margin-bottom: 5rem;
+}
 .about .row .image img{
     height: 35rem;
     margin-left: 1rem;
@@ -251,7 +254,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row{
-    margin-top: 10rem;  
+    margin-top: 5rem;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,7 +322,9 @@ header .navbar ul li a:hover{
     padding-left: 3rem;
 }
 
-
+.education{
+    margin-bottom: 5rem;
+}
 .education .box-container .box{
     width:40rem;
     margin:4rem 1rem;
@@ -360,7 +365,9 @@ header .navbar ul li a:hover{
     color:#fff;
     background:var(--yellow);
 }
-
+.portfolio{
+    margin-bottom: 5rem;
+}
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -388,7 +395,9 @@ header .navbar ul li a:hover{
 .portfolio .box-container .box:hover img{
     transform: scale(1.2);
 }
-
+.contact{
+    margin-bottom: 5rem;
+}
 .contact .row{
 
     display: flex;
@@ -545,9 +554,14 @@ header .navbar ul li a:hover{
 @media (max-width:768px){
 
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
- 
+    .education .box-container .box{
+        width:100%;
+    }
+    .share{
+        margin-top: 0;
+    }
  }
 
 @media (max-width:400px){
